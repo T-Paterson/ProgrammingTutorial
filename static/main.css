@@ -2,37 +2,37 @@
   font-family: "IBM Plex Serif";
   font-style: normal;
   font-weight: 450;
-  src: local("IBM Plex Serif Text"), local("IBMPlexSerif-Text"), url("/static/fonts/serif/IBMPlexSerif-Text.woff2");
+  src: local("IBM Plex Serif Text"), local("IBMPlexSerif-Text"), url("/ProgrammingTutorial/static/fonts/serif/IBMPlexSerif-Text.woff2");
 }
 @font-face {
   font-family: "IBM Plex Serif";
   font-style: italic;
   font-weight: 400;
-  src: local("IBM Plex Serif Italic"), local("IBMPlexSerif-Italic"), url("/static/fonts/serif/IBMPlexSerif-Italic.woff2");
+  src: local("IBM Plex Serif Italic"), local("IBMPlexSerif-Italic"), url("/ProgrammingTutorial/static/fonts/serif/IBMPlexSerif-Italic.woff2");
 }
 @font-face {
   font-family: "IBM Plex Sans Condensed";
   font-style: normal;
   font-weight: 400;
-  src: local("IBM Plex Sans Condensed"), local("IBMPlexSansCondensed"), url("/static/fonts/condensed/IBMPlexSansCondensed-Regular.woff2");
+  src: local("IBM Plex Sans Condensed"), local("IBMPlexSansCondensed"), url("/ProgrammingTutorial/static/fonts/condensed/IBMPlexSansCondensed-Regular.woff2");
 }
 @font-face {
   font-family: "IBM Plex Sans Condensed";
   font-style: normal;
   font-weight: 600;
-  src: local("IBM Plex Sans Cond SmBld"), local("IBMPlexSansCond-SmBld"), url("/static/fonts/condensed/IBMPlexSansCondensed-SemiBold.woff2");
+  src: local("IBM Plex Sans Cond SmBld"), local("IBMPlexSansCond-SmBld"), url("/ProgrammingTutorial/static/fonts/condensed/IBMPlexSansCondensed-SemiBold.woff2");
 }
 @font-face {
   font-family: "IBM Plex Sans";
   font-style: normal;
   font-weight: 400;
-  src: local("IBM Plex Sans"), local("IBMPlexSans"), url("/static/fonts/sans/IBMPlexSans-Regular.woff2");
+  src: local("IBM Plex Sans"), local("IBMPlexSans"), url("/ProgrammingTutorial/static/fonts/sans/IBMPlexSans-Regular.woff2");
 }
 @font-face {
   font-family: "IBM Plex Mono";
   font-style: normal;
   font-weight: 400;
-  src: local("IBM Plex Mono"), local("IBMPlexMono"), url("/static/fonts/mono/IBMPlexMono-Regular.woff2");
+  src: local("IBM Plex Mono"), local("IBMPlexMono"), url("/ProgrammingTutorial/static/fonts/mono/IBMPlexMono-Regular.woff2");
 }
 
 body, html {

@@ -2,8 +2,8 @@
 <html>
 	<head>
 		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-		<link rel="stylesheet" href="/static/main.css"/>
-		<link rel="stylesheet" href="/static/highlight.css"/>
+		<link rel="stylesheet" href="{{ path_prefix }}/static/main.css"/>
+		<link rel="stylesheet" href="{{ path_prefix }}/static/highlight.css"/>
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<title>{{ page_title }} | {{ site_title }}</title>
 	</head>
@@ -14,17 +14,17 @@
 
 		<ul class="page-list">
 			{%- for page in page_list %}
-			<li class="page-item"><a class="page-link" href="{{ page.get_link_path() }}">{{ page.title }}</a></li>
+			<li class="page-item"><a class="page-link" href="{{ path_prefix }}/{{ page.get_link_path() }}">{{ page.title }}</a></li>
 			{%- endfor %}
 		</ul>
 
 		<div class = "controls-container">
 			{% if prev_link is not none %}
-			<a class="nav-button-edge" href="{{ prev_link }}"> ⟵ {{ prev_title }}</a>
+			<a class="nav-button-edge" href="{{ path_prefix }}/{{ prev_link }}"> ⟵ {{ prev_title }}</a>
 			{% endif %}
 			<a class="nav-button-middle" href="/">Home</a>
 			{% if next_link is not none %}
-			<a class="nav-button-edge" href="{{ next_link }}">{{ next_title }} ⟶</a>
+			<a class="nav-button-edge" href="{{ path_prefix }}/{{ next_link }}">{{ next_title }} ⟶</a>
 			{% endif %}
 		</div>
 	</body>

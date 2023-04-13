@@ -1,3 +1,4 @@
  {
- 	"title": "Test Book"
+ 	"title": "Test Book",
+    "path_prefix": "/ProgrammingTutorial"
  }

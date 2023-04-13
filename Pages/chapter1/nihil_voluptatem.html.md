@@ -19,7 +19,7 @@ Natus quidem enim vitae quia quia voluptas delectus. Facere maiores reiciendis q
 ## Vel
 Vel ipsa atque excepturi odio. Deserunt minima et dolores rerum quo eius iste. Enim sunt possimus laboriosam.
 
-![Enim sunt possimus laboriosam. Ea deleniti tempore et. Ea ut quod omnis vitae asperiores et officiis.](/static/test.png)
+![Enim sunt possimus laboriosam. Ea deleniti tempore et. Ea ut quod omnis vitae asperiores et officiis.](/ProgrammingTutorial/static/test.png)
 
 Exercitationem ullam accusamus enim magni velit quis eaque. Omnis tempora facere tempore nobis molestiae. Voluptatem sapiente voluptatem temporibus. Nesciunt debitis ut nihil. Nostrum maxime dignissimos saepe ab `dolorum(nobis)`{.python} non in. Magni molestiae quod molestias magni quaerat fugiat.
 

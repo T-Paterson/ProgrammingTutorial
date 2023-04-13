@@ -2,8 +2,8 @@
 <html>
 	<head>
 		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-		<link rel="stylesheet" href="/static/main.css"/>
-		<link rel="stylesheet" href="/static/highlight.css"/>
+		<link rel="stylesheet" href="{{ path_prefix }}/static/main.css"/>
+		<link rel="stylesheet" href="{{ path_prefix }}/static/highlight.css"/>
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<title>{{ site_title }}</title>
 	</head>
@@ -14,11 +14,11 @@
 
 		<div class="page-tree">
 			{%- for p in page_list %}
-			<h4 class="page-item-toplevel"><a class="page-link" href="{{ p.get_link_path() }}">{{ p.title }}</a></h4>
+			<h4 class="page-item-toplevel"><a class="page-link" href="{{ path_prefix }}/{{ p.get_link_path() }}">{{ p.title }}</a></h4>
 			{% if p.is_group %}
 				<ul class="page-list">
 					{%- for q in p.pages %}
-					<li class="page-item"><a class="page-link" href="{{ q.get_link_path() }}">{{ q.title }}</a></li>
+					<li class="page-item"><a class="page-link" href="{{ path_prefix }}/{{ q.get_link_path() }}">{{ q.title }}</a></li>
 					{%- endfor %}
 				</ul>
 			{% endif %}

@@ -88,7 +88,8 @@ class Page():
 			next_link = next_.get_link_path() if next_ is not None else None,
 			prev_title = prev.title if prev is not None else None,
 			prev_link = prev.get_link_path() if prev is not None else None,
-			content = self.final_path.read_text())
+			content = self.final_path.read_text(),
+			path_prefix = conf["path_prefix"])
 
 		self.final_path.write_text(rendered)
 
@@ -226,7 +227,8 @@ class PageGroup():
 				prev_title = prev.title if prev is not None else None,
 				prev_link = prev.get_link_path() if prev is not None else None,
 				content = self.final_path.read_text(),
-				page_list = self.pages)
+				page_list = self.pages,
+				path_prefix = conf["path_prefix"])
 
 			self.final_path.write_text(rendered)
 
@@ -236,7 +238,8 @@ class PageGroup():
 			rendered = template.render(page_title = self.title,
 				site_title = conf["title"],
 				content = self.final_path.read_text(),
-				page_list = self.pages)
+				page_list = self.pages,
+				path_prefix = conf["path_prefix"])
 
 			self.final_path.write_text(rendered)
 
