@@ -22,7 +22,7 @@
 			{% if prev_link is not none %}
 			<a class="nav-button-edge" href="{{ path_prefix }}/{{ prev_link }}"> ⟵ {{ prev_title }}</a>
 			{% endif %}
-			<a class="nav-button-middle" href="/">Home</a>
+			<a class="nav-button-middle" href="{{ path_prefix }}">Home</a>
 			{% if next_link is not none %}
 			<a class="nav-button-edge" href="{{ path_prefix }}/{{ next_link }}">{{ next_title }} ⟶</a>
 			{% endif %}
