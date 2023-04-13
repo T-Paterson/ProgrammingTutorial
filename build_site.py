@@ -55,7 +55,7 @@ class Page():
 
 	def run_pandoc(self):
 		in_path = str(self.location)
-		out_path_obj = pathlib.Path("./Build", *self.location.parts[1:])
+		out_path_obj = pathlib.Path("./docs", *self.location.parts[1:])
 		self.final_path = out_path_obj.with_suffix(self.location.suffix.replace(".md", ""))
 
 		subprocess.call(["pandoc",
@@ -189,7 +189,7 @@ class PageGroup():
 
 		else:
 			parts = self.location.parts
-			pathlib.Path( "./Build", *parts[1:]).mkdir(exist_ok=True)
+			pathlib.Path( "./docs", *parts[1:]).mkdir(exist_ok=True)
 
 		for page_or_group in self.pages:
 			if type(page_or_group) == PageGroup:
@@ -200,7 +200,7 @@ class PageGroup():
 			p.run_pandoc()
 
 		in_path = str(self.location / "index.html.md")
-		self.final_path = pathlib.Path("./Build", *self.location.parts[1:]) / "index.html"
+		self.final_path = pathlib.Path("./docs", *self.location.parts[1:]) / "index.html"
 
 		subprocess.call(["pandoc",
 			in_path,
@@ -309,7 +309,7 @@ if __name__ == "__main__":
 	top_group.apply_template(template_env)
 
 	print("Copying static files...")
-	copy_tree("./static", "./Build/static")
+	copy_tree("./static", "./docs/static")
 
 	print("ALL DONE. Starting test server...")
 
