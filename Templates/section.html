@@ -14,17 +14,17 @@
 
 		<ul class="page-list">
 			{%- for page in page_list %}
-			<li class="page-item"><a class="page-link" href="{{ path_prefix }}/{{ page.get_link_path() }}">{{ page.title }}</a></li>
+			<li class="page-item"><a class="page-link" href="{{ path_prefix }}{{ page.get_link_path() }}">{{ page.title }}</a></li>
 			{%- endfor %}
 		</ul>
 
 		<div class = "controls-container">
 			{% if prev_link is not none %}
-			<a class="nav-button-edge" href="{{ path_prefix }}/{{ prev_link }}"> ⟵ {{ prev_title }}</a>
+			<a class="nav-button-edge" href="{{ path_prefix }}{{ prev_link }}"> ⟵ {{ prev_title }}</a>
 			{% endif %}
 			<a class="nav-button-middle" href="{{ path_prefix }}">Home</a>
 			{% if next_link is not none %}
-			<a class="nav-button-edge" href="{{ path_prefix }}/{{ next_link }}">{{ next_title }} ⟶</a>
+			<a class="nav-button-edge" href="{{ path_prefix }}{{ next_link }}">{{ next_title }} ⟶</a>
 			{% endif %}
 		</div>
 	</body>

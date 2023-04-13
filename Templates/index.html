@@ -14,11 +14,11 @@
 
 		<div class="page-tree">
 			{%- for p in page_list %}
-			<h4 class="page-item-toplevel"><a class="page-link" href="{{ path_prefix }}/{{ p.get_link_path() }}">{{ p.title }}</a></h4>
+			<h4 class="page-item-toplevel"><a class="page-link" href="{{ path_prefix }}{{ p.get_link_path() }}">{{ p.title }}</a></h4>
 			{% if p.is_group %}
 				<ul class="page-list">
 					{%- for q in p.pages %}
-					<li class="page-item"><a class="page-link" href="{{ path_prefix }}/{{ q.get_link_path() }}">{{ q.title }}</a></li>
+					<li class="page-item"><a class="page-link" href="{{ path_prefix }}{{ q.get_link_path() }}">{{ q.title }}</a></li>
 					{%- endfor %}
 				</ul>
 			{% endif %}
