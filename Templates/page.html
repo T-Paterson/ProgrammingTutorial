@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+		<link rel="stylesheet" href="/static/main.css"/>
+		<link rel="stylesheet" href="/static/highlight.css"/>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>{{ page_title }} | {{ site_title }}</title>
+	</head>
+	<body>
+		<div class="content-container">
+			{{ content | safe }}
+		</div>
+		<div class = "controls-container">
+			{% if prev_link is not none %}
+			<a class="nav-button-edge" href="{{ prev_link }}"> ⟵ {{ prev_title }}</a>
+			{% endif %}
+			<a class="nav-button-middle" href="/">Home</a>
+			{% if chapter_link != "/" %}
+			<a class="nav-button-middle" href="{{ chapter_link }}">Chapter</a>
+			{% endif %}
+			{% if next_link is not none %}
+			<a class="nav-button-edge" href="{{ next_link }}">{{ next_title }} ⟶</a>
+			{% endif %}
+		</div>
+	</body>
+</html>
